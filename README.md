@@ -1,7 +1,24 @@
 # Projeto Casa Sustenvel
 ## Feito por Matheus, Maiar, Gustavo Pedrazzoli, Rodrigo Mello, Vecchiato, Cesar
 
-
+### Requeriments
+- PHP9
+1.
+```
+sudo apt install php -y && sudo php -S localhost:8080
+```
+- Apache2
+2.
+```
+sudo apt install apache2 && sudo systemctl start apache2
+```
+- Servidor externo
+3.
+```
+wget https://github.com/cloudflare/cloudflared/releases/download/2025.1.0/cloudflared-fips-linux-amd64 -O cloudflare
+chmod +x cloudflare
+sudo mv cloudflare /usr/local/bin/
+```
 ### Back end
 - Nao completado
 
