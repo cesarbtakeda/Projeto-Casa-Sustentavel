@@ -5,19 +5,20 @@
 - PHP9
 1.
 ```
-sudo apt install php -y && sudo php -S localhost:8080
+$sudo apt install php -y && sudo php -S localhost:8080
 ```
 - Apache2
 2.
 ```
-sudo apt install apache2 && sudo systemctl start apache2
+$sudo apt install apache2 && sudo systemctl start apache2
 ```
 - Servidor externo
 3.
 ```
-wget https://github.com/cloudflare/cloudflared/releases/download/2025.1.0/cloudflared-fips-linux-amd64 -O cloudflare
-chmod +x cloudflare
-sudo mv cloudflare /usr/local/bin/
+$wget https://github.com/cloudflare/cloudflared/releases/download/2025.1.0/cloudflared-fips-linux-amd64 -O cloudflare
+$chmod +x cloudflare
+$sudo mv cloudflare /usr/local/bin/
+$sudo cloudflare tunnel --url localhost:8080
 ```
 ### Back end
 - Nao completado
